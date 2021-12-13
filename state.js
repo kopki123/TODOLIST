@@ -1,11 +1,7 @@
 export class State {
-  constructor(state, callbacks) {
+  constructor(state) {
     this.state = state;
-    this.callbacks = callbacks;
-  }
-
-  setup(defaultValue) {
-    this.state = defaultValue;
+    this.callbacks = [];
   }
 
   setSate(newValue) {
